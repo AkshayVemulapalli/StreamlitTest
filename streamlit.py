@@ -8,4 +8,4 @@ df = pd.DataFrame({
 })
 
 st.title('Simple Line Chart')
-st.line_chart([int(np.round(np.sin(0.1 * x))) for x in range(100)])
+st.line_chart([int(np.round(np.sin(x))) for x in range(100)])
