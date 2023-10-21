@@ -6,9 +6,5 @@ import numpy as np
 # Create a random dataframe for demonstration purposes
 df = pd.DataFrame({
   'x': range(1, 101),
-  'y': [int(np.round(np.sin(0.1 * x))) for x in range(100)]
-})
-
-st.title('Simple Line Chart')
-
+  'y': [
 st.line_chart(df.y)
